@@ -1,0 +1,1281 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* Header */
+header {
+    background-color: #ffffff;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+.logo {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+nav {
+    margin-top: 0.5rem;
+    text-align: center;
+
+}
+
+a {
+  text-decoration: none !important;
+}
+a:hover, a:focus, a:active {
+  text-decoration: none !important;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+    text-align: center;
+    
+}
+
+.nav-links a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+    text-align: center;
+}
+
+.nav-links a:hover {
+    color: #000000;
+    text-align: center;
+}
+
+
+
+/* Logo con imagen y texto */
+.logo {
+    display: inline-flex;
+    align-items: center;
+    font-size: 2rem;
+    font-weight: 900;
+    color: white;
+    letter-spacing: 2px;
+    text-decoration: none;
+    user-select: none;
+  }
+  
+  .logo-img {
+    width: 200px;       /* Ajusta el tamaño del logo */
+    height: 150px;
+    object-fit: contain;
+    margin-right: 0;
+  }
+  
+  /* Ajustes para el header ya definidos, solo por referencia */
+  header {
+    background-color: #ffffff;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    box-shadow: 0 3px 8px rgb(255, 221, 221);
+  }
+  
+  .container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  /* Navegación */
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    margin-top: 0.5rem;
+    padding: 0;
+  }
+  
+  .nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+    padding: 0.3rem 0.6rem;
+    border-radius: 8px;
+  }
+  
+  .nav-links a:hover,
+  .nav-links a[aria-current="page"] {
+    background-color: #ff8aa0;
+    color: rgb(0, 0, 0);
+  }
+  
+  /* Responsive para header y navegación */
+  @media (max-width: 768px) {
+    .nav-links {
+      flex-direction: column;
+      gap: 1rem;
+      align-items: center;
+    }
+    .logo {
+      font-size: 1.8rem;
+    }
+    .logo-img {
+      width: 200px;
+      height: 200px;
+    }
+  }
+  
+
+/* Hero */
+.hero {
+    background: url('') no-repeat center center/cover;
+    color: black;
+    padding: 4rem 0;
+    text-align: center;
+}
+
+.hero h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.6);
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+}
+
+.btn {
+    background-color: #FFB6C1;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 25px;
+    font-size: 1rem;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #ffb6c1cb;
+}
+
+/* Reajuste para la sección de servicios (elimina el CSS anterior para .services ul) */
+.services {
+    background-color: #fef1f3; /* Un color de fondo suave que combine con tu paleta */
+    padding: 4rem 0;
+    text-align: center;
+}
+
+.services h2 {
+    color: #FFB6C1; /* Color principal de tu marca */
+    font-size: 2.5rem;
+    margin-bottom: 2.5rem;
+    font-weight: 700;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); /* Columnas responsivas */
+    gap: 2rem; /* Espacio entre las tarjetas */
+    max-width: 1200px; /* Ancho máximo del grid */
+    margin: 0 auto; /* Centrar el grid */
+    padding: 0 1rem; /* Padding lateral en móviles */
+}
+
+.service-card {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(255, 182, 193, 0.2); /* Sombra suave con tu color */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start; /* Alinea el contenido al principio verticalmente */
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 100%; /* Asegura que todas las tarjetas tengan la misma altura si el contenido lo permite */
+}
+
+.service-card:hover {
+    transform: translateY(-8px); /* Efecto flotante al pasar el mouse */
+    box-shadow: 0 15px 40px rgba(255, 182, 193, 0.35); /* Sombra más pronunciada */
+}
+
+.service-card h3 {
+    color: #FFB6C1; /* Color principal para los títulos */
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.service-card p {
+    color: #555;
+    font-size: 1rem;
+    line-height: 1.7;
+    margin-bottom: 1.5rem; /* Espacio antes del ícono si lo hay */
+}
+
+.service-icon {
+    width: 60px; /* Tamaño del ícono */
+    height: 60px;
+    margin-top: 1rem; /* Espacio entre el texto y el ícono */
+    border-radius: 0; /* Si quieres que los iconos sean redondos */
+    object-fit: cover; /* Para asegurar que la imagen se ajuste bien */
+    border: 3px solid #fdfdfd; /* Pequeño borde decorativo */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* Media Queries para Tablets y Móviles (ajusta según necesites) */
+@media (max-width: 992px) {
+    .services h2 {
+        font-size: 2.2rem;
+    }
+    .service-card {
+        padding: 1.5rem;
+    }
+    .service-card h3 {
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .services {
+        padding: 3rem 0;
+    }
+    .services h2 {
+        font-size: 2rem;
+        margin-bottom: 2rem;
+    }
+    .services-grid {
+        grid-template-columns: 1fr; /* Una columna en móviles */
+        gap: 1.5rem;
+    }
+    .service-card {
+        padding: 1.2rem;
+    }
+    .service-card p {
+        font-size: 0.95rem;
+    }
+    .service-icon {
+        width: 50px;
+        height: 50px;
+    }
+}
+
+
+/* Estilos para la sección de blog */
+.blog {
+    background: linear-gradient(135deg, #ffe6eb 0%, #fff0f3 100%);
+    padding: 5rem 1rem;
+    border-radius: 20px;
+    max-width: 1100px;
+    margin: 3rem auto 5rem auto;
+    box-shadow: 0 15px 40px rgba(255, 182, 193, 0.3);
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.blog h2 {
+    color: #ff5c8d;
+    font-size: 3rem;
+    margin-bottom: 3rem;
+    font-weight: 800;
+    letter-spacing: 1.2px;
+    text-shadow: 1px 1px 3px rgba(255, 92, 141, 0.4);
+}
+
+/* Contenedor de posts en grid */
+.blog-posts {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2.5rem;
+    padding: 0 1rem;
+}
+
+/* Cada post como tarjeta */
+.blog-post {
+    background: white;
+    border-radius: 18px;
+    padding: 2.5rem 2rem 3rem 2rem;
+    box-shadow: 0 10px 25px rgba(255, 92, 141, 0.15);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.35s ease, box-shadow 0.35s ease;
+    cursor: pointer;
+}
+
+.blog-post:hover {
+    transform: translateY(-12px) scale(1.03);
+    box-shadow: 0 20px 50px rgba(255, 92, 141, 0.35);
+}
+
+/* Título del post */
+.blog-post h3 {
+    color: #ff2e63;
+    font-size: 1.8rem;
+    margin-bottom: 0.6rem;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+/* Fecha con estilo elegante */
+.post-date {
+    font-size: 0.9rem;
+    color: #ff7f9a;
+    font-style: italic;
+    margin-bottom: 1.5rem;
+    letter-spacing: 0.7px;
+}
+
+/* Resumen del post */
+.blog-post p {
+    color: #555;
+    font-size: 1.05rem;
+    line-height: 1.6;
+    flex-grow: 1;
+    margin-bottom: 2rem;
+}
+
+/* Enlace "Leer más" estilizado */
+.read-more {
+    align-self: flex-start;
+    font-weight: 700;
+    color: #ff2e63;
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+    font-size: 1.1rem;
+    transition: border-color 0.3s ease, color 0.3s ease;
+}
+
+.read-more:hover {
+    border-color: #ff2e63;
+    color: #ff5c8d;
+}
+
+/* Adaptación para móviles */
+@media (max-width: 768px) {
+    .blog h2 {
+        font-size: 2.2rem;
+        margin-bottom: 2rem;
+    }
+    .blog-posts {
+        grid-template-columns: 1fr;
+        gap: 1.8rem;
+    }
+    .blog-post {
+        padding: 2rem 1.5rem 2.5rem 1.5rem;
+    }
+    .blog-post h3 {
+        font-size: 1.5rem;
+    }
+    .blog-post p {
+        font-size: 1rem;
+    }
+    .read-more {
+        font-size: 1rem;
+    }
+}
+
+
+/* Secciones */
+section {
+    padding: 3rem 0;
+    background-color: white;
+    /* poner en medio el texto*/
+    text-align: center;
+    margin-bottom: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: #0c0c0c;
+}
+
+/* Sobre mí */
+.about p {
+    max-width: 700px;
+    margin: 0 auto;
+    font-size: 1.1rem;
+    text-align: center;
+}
+
+/* Servicios */
+.services ul {
+    max-width: 700px;
+    margin: 0 auto;
+    list-style: inside disc;
+    font-size: 1.1rem;
+    color: #555;
+}
+
+/* Estilo mejorado para la sección de contacto */
+.contact {
+    background: #ffe9ed; /* fondo suave verde claro */
+    padding: 3rem 1rem;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(255, 209, 220);
+    max-width: 700px;
+    margin: 3rem auto 2rem auto;
+}
+
+.contact h2 {
+    color: #0e0e0e;
+    font-weight: 700;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+.contact p {
+    text-align: center;
+    font-size: 1.1rem;
+    color: #000000d5;
+    margin-bottom: 2rem;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+.contact label {
+    font-weight: 600;
+    color: #000000;
+    margin-bottom: 0.25rem;
+    font-size: 1rem;
+}
+
+.contact input,
+.contact textarea {
+    padding: 0.85rem 1rem;
+    border: 2px solid #FFB6C1;
+    border-radius: 10px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    font-family: inherit;
+    resize: vertical;
+    box-shadow: inset 0 1px 3px rgba(0,0,0,0.05);
+}
+
+.contact input:focus,
+.contact textarea:focus {
+    border-color: #FFB6C1;
+    box-shadow: 0 0 8px rgba(255, 209, 220);
+    outline: none;
+}
+
+.contact button.btn {
+    background: linear-gradient(45deg, #FFB6C1, #FFB6C1);
+    color: white;
+    font-weight: 700;
+    padding: 0.85rem 0;
+    border: none;
+    border-radius: 25px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background 0.4s ease;
+    box-shadow: 0 4px 10px rgb(255, 201, 213);
+}
+
+.contact button.btn:hover {
+    background: linear-gradient(45deg, #ffb6c1c0, #ffb6c1d5);
+    box-shadow: 0 6px 15px rgb(255, 209, 220);
+}
+
+.info-contacto {
+    text-align: center;
+    font-size: 0.95rem;
+    color: #FFB6C1;
+    font-weight: 600;
+    margin-top: 1.5rem;
+    letter-spacing: 0.5px;
+}
+
+
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #fff0f3;
+    color: #3a1a1a;
+    line-height: 1.6;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Contenedor general */
+  .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-grow: 1;
+  }
+  
+  
+  
+  .logo {
+    font-size: 2.2rem;
+    font-weight: 900;
+    color: white;
+    letter-spacing: 2px;
+    user-select: none;
+  }
+  
+  nav {
+    margin-top: 0.6rem;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    font-weight: 600;
+  }
+  
+  .nav-links a {
+    color: rgb(3, 3, 3);
+    text-decoration: none;
+    font-size: 1.1rem;
+    padding: 0.3rem 0.6rem;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .nav-links a:hover,
+  .nav-links a[aria-current="page"] {
+    background-color: #ff8aa0;
+    color: #fff;
+  }
+  
+
+
+  /* Sección contacto */
+  .contact {
+    background: linear-gradient(135deg, #ffcad2 0%, #FFB6C1 100%);
+    padding: 4rem 2rem 5rem 2rem;
+    border-radius: 25px;
+    box-shadow: 0 15px 40px rgb(255, 182, 193);
+    margin: 4rem auto 6rem auto;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .contact::before,
+  .contact::after {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(100px);
+    opacity: 0.3;
+    z-index: 0;
+  }
+  
+  .contact::before {
+    width: 250px;
+    height: 250px;
+    background: #fdccd7;
+    top: -80px;
+    right: -80px;
+  }
+  
+  .contact::after {
+    width: 180px;
+    height: 180px;
+    background: #f1e1e2;
+    bottom: -60px;
+    left: -60px;
+  }
+  
+  .contact * {
+    position: relative;
+    z-index: 1;
+  }
+  
+  .contact h2 {
+    font-size: 3rem;
+    font-weight: 900;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 6px rgba(255, 255, 255, 0.5);
+    color: #fff;
+    letter-spacing: 2px;
+  }
+  
+  .contact p {
+    font-size: 1.25rem;
+    margin-bottom: 3rem;
+    color: #fff7f7;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.15);
+  }
+  
+  
+  /* seccion contacto Botón */
+  .btn {
+    background: linear-gradient(45deg, #FFB6C1, #FFB6C1);
+    color: white;
+    font-weight: 900;
+    font-size: 1.3rem;
+    padding: 1rem 0;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    box-shadow: 0 8px 20px rgba(255, 111, 145, 0.6);
+    transition: background 0.4s ease, box-shadow 0.4s ease, transform 0.3s ease;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    width: 100%;
+    max-width: 320px;
+    align-self: center;
+    margin-top: 1rem;
+  }
+  
+  .btn:hover {
+    background: linear-gradient(45deg, #FFB6C1, #FFB6C1);
+    box-shadow: 0 12px 30px rgba(255, 241, 244, 0.9);
+    transform: scale(1.05);
+  }
+  
+  .info-contacto {
+    margin-top: 3rem;
+    font-weight: 700;
+    font-size: 1rem;
+    color: #fff;
+    letter-spacing: 1px;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+    text-align: center;
+  }
+
+  
+/* Esta parte es del Contacto en contacto.html*/
+
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #f5f5f5 0%, #FFB6C1 100%);
+    margin: 0;
+    padding: 0;
+  }
+  
+  .contact-section {
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    background: transparent; /* para que se vea el gradiente del body */
+    padding: 2rem 0;
+  }
+  
+  .contact-container {
+    display: flex;
+    width: 90vw;
+    max-width: 1100px;
+    min-height: 70vh;
+    background: transparent;
+    border-radius: 25px;
+    box-shadow: 0 15px 40px rgb(255, 182, 193);
+    overflow: hidden;
+    margin: 4rem auto 6rem auto;
+    position: relative;
+    text-align: center;
+  }
+  
+  .contact-container::before,
+  .contact-container::after {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(100px);
+    opacity: 0.3;
+    z-index: 0;
+  }
+  
+  .contact-container::before {
+    width: 250px;
+    height: 250px;
+    background: #fdccd7;
+    top: -80px;
+    right: -80px;
+  }
+  
+  .contact-container::after {
+    width: 180px;
+    height: 180px;
+    background: #f1e1e2;
+    bottom: -60px;
+    left: -60px;
+  }
+  
+  .contact-form {
+    flex: 1 1 44%;
+    background: transparent;
+    padding: 3rem 2.5rem 3rem 2.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .contact-form h2 {
+    font-size: 2.2rem;
+    font-weight: 900;
+    margin-bottom: 2rem;
+    color: #fff;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 6px rgba(255, 255, 255, 0.5);
+  }
+  
+  .contact-form form {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .contact-form label {
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    color: #fff7f7;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.15);
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    margin-bottom: 1.5rem;
+    padding: 0.95rem 1.1rem;
+    border-radius: 30px;
+    border: none;
+    font-size: 1rem;
+    background: #ffb6c1;
+    color: #fff;
+    font-family: inherit;
+    box-shadow: 0 8px 20px rgba(255, 111, 145, 0.6);
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .contact-form input:focus,
+  .contact-form textarea:focus {
+    background: #fff0f3;
+    color: #ffb6c1;
+    outline: none;
+    box-shadow: 0 12px 30px rgba(255, 241, 244, 0.9);
+  }
+  
+  .btn-submit {
+    background: linear-gradient(45deg, #FFB6C1, #FFB6C1);
+    color: white;
+    font-weight: 900;
+    font-size: 1.3rem;
+    padding: 1rem 0;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    box-shadow: 0 8px 20px rgba(255, 111, 145, 0.6);
+    transition: background 0.4s ease, box-shadow 0.4s ease, transform 0.3s ease;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    width: 100%;
+    max-width: 320px;
+    align-self: center;
+    margin-top: 1rem;
+    align-self: center;
+  }
+  
+  .btn-submit:hover {
+    background: linear-gradient(45deg, #FFB6C1, #FFB6C1);
+    box-shadow: 0 12px 30px rgba(255, 241, 244, 0.9);
+    transform: scale(1.05);
+  }
+  
+  .contact-image {
+    flex: 1 1 56%;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 2rem 2rem 0;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .contact-image img {
+    width: 100%;
+    max-width: 420px;
+    height: auto;
+    display: block;
+    border-radius: 25px;
+    object-fit: contain;
+    box-shadow: 0 8px 32px rgba(255, 182, 193, 0.09);
+  }
+  
+  /* Responsive */
+  @media (max-width: 900px) {
+    .contact-container {
+      flex-direction: column;
+      min-height: unset;
+      margin: 2rem auto;
+    }
+    .contact-form, .contact-image {
+      max-width: 100%;
+      padding: 2rem 1.5rem;
+      border-radius: 0;
+    }
+    .contact-image {
+      justify-content: flex-start;
+      padding: 0 1.5rem 2rem 1.5rem;
+    }
+    .contact-image img {
+      max-width: 340px;
+      margin: 0 auto;
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .contact-section {
+      padding: 0.5rem 0;
+    }
+    .contact-container {
+      width: 99vw;
+      box-shadow: none;
+      border-radius: 0;
+      margin: 1rem auto;
+    }
+    .contact-form {
+      padding: 1.2rem 0.5rem;
+    }
+    .contact-image {
+      padding: 0 0.5rem 1rem 0.5rem;
+    }
+    .contact-form h2 {
+      font-size: 1.4rem;
+      margin-bottom: 1.2rem;
+    }
+  }
+
+  /* Aqui termina la parte del contacto del contacto.html*/
+  
+  /* Footer */
+  footer {
+    background-color: #FFB6C1;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    font-size: 0.9rem;
+    user-select: none;
+  }
+  
+  footer a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 0.3rem;
+    font-weight: 600;
+  }
+  
+  footer a:hover {
+    text-decoration: none;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .contact {
+      padding: 3rem 1.5rem 4rem 1.5rem;
+    }
+    .contact h2 {
+      font-size: 2.5rem;
+    }
+    .btn {
+      font-size: 1.1rem;
+      max-width: 100%;
+    }
+    .nav-links {
+      flex-direction: column;
+      gap: 1rem;
+    }
+  }
+  
+/* Responsive */
+@media (max-width: 768px) {
+    .nav-links {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero h2 {
+        font-size: 2rem;
+    }
+}
+
+
+.nutriologo-consulta {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 2rem;
+  background-color: #fff0f3;
+  padding: 2.5rem 1rem 3rem 1rem;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(255, 182, 193, 0.25);
+  align-items: center;
+  margin-bottom: 3rem;
+  text-align: left;
+}
+
+.nutriologo-consulta.container {
+  margin-top: 0;    /* elimina margen arriba */
+  margin-bottom: 0; /* elimina margen abajo */
+  gap: 0;           /* elimina espacio entre hijos si hay */
+  /* no modifiques margin-left y margin-right */
+}
+
+
+.nutriologo-text h3 {
+  color: #333;
+  font-weight: 700;
+  margin-bottom: 0.7rem;
+  border-bottom: 3px solid #ffb6c1;
+  display: inline-block;
+  padding-bottom: 0.3rem;
+}
+
+.nutriologo-text p {
+  color: #555;
+  font-size: 1rem;
+  line-height: 1.5;
+  max-width: 300px;
+}
+
+.nutriologo-oferta {
+  background: white;
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 6px 20px rgba(255, 182, 193, 0.15);
+  max-width: 320px;
+}
+
+.nutriologo-oferta h4 {
+  color: #ff9caf;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.nutriologo-oferta p {
+  margin-bottom: 0.7rem;
+  font-weight: 600;
+  color: #333;
+  font-size: 1rem;
+}
+
+.nutriologo-oferta small {
+  display: block;
+  color: #999;
+  font-size: 0.75rem;
+  margin-bottom: 1.5rem;
+  max-width: 300px;
+}
+
+.nutriologo-btn {
+  width: 100%;
+  max-width: 280px;
+  padding: 0.9rem 0;
+  font-weight: 900;
+  letter-spacing: 1.2px;
+  font-size: 1.1rem;
+  border-radius: 30px;
+  box-shadow: 0 8px 20px rgba(255, 111, 145, 0.6);
+  background: linear-gradient(45deg, #FFB6C1, #FFB6C1);
+  color: white;
+  text-align: center;
+  display: inline-block;
+  transition: background 0.4s ease, box-shadow 0.4s ease, transform 0.3s ease;
+  text-decoration: none;
+}
+
+.nutriologo-btn:hover {
+  box-shadow: 0 12px 30px rgba(255, 241, 244, 0.9);
+  transform: scale(1.05);
+  background: linear-gradient(45deg, #ff8aa0, #ff8aa0);
+}
+
+.nutriologo-imagen img {
+  width: 100%;
+  max-width: 320px;
+  border-radius: 12px;
+  object-fit: cover;
+  box-shadow: 0 8px 32px rgba(255, 182, 193, 0.15);
+  justify-self: center;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .nutriologo-consulta {
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+  }
+  .nutriologo-text, .nutriologo-oferta {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  .nutriologo-imagen {
+    grid-column: 1 / -1;
+    justify-self: center;
+    margin-top: 1.5rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .nutriologo-consulta {
+    grid-template-columns: 1fr;
+    padding: 2rem 0.5rem;
+  }
+  .nutriologo-text, .nutriologo-oferta, .nutriologo-imagen {
+    margin: 0 auto 1.5rem auto;
+    max-width: 100%;
+    text-align: center;
+  }
+  .nutriologo-oferta {
+    padding: 1.5rem 1rem;
+  }
+  .nutriologo-btn {
+    max-width: 100%;
+  }
+}
+.imagen-texto {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Dos columnas iguales */
+  gap: 2rem;
+  align-items: center;
+  background-color: #fff0f3; /* mismo fondo suave */
+  padding: 2.5rem 2.5rem;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(255, 182, 193, 0.25);
+  text-align: left;
+  margin-bottom: 0;
+}
+
+.imagen-texto-imagen img {
+  width: 100%;
+  max-width: 500px; /* igual que en los otros */
+  border-radius: 12px;
+  object-fit: cover;
+  box-shadow: 0 8px 32px rgba(255, 182, 193, 0.15);
+  justify-self: center;
+}
+
+.imagen-texto-texto {
+  max-width: 500px;
+}
+
+.imagen-texto-texto h2 {
+  color: #ff8aa0;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.imagen-texto-texto p {
+  color: #333;
+  font-size: 1.1rem;
+  margin-bottom: 0;
+  line-height: 1.5;
+}
+
+/* Botón con estilo igual */
+.imagen-texto-texto .btn {
+  max-width: 200px;
+  padding: 0.75rem 1.5rem;
+  font-weight: 700;
+}
+
+/* Responsive para móviles */
+@media (max-width: 768px) {
+  .imagen-texto {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  .imagen-texto-imagen img {
+    max-width: 90%;
+    margin: 0 auto 1.5rem auto;
+  }
+  .imagen-texto-texto {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  .imagen-texto-texto h2 {
+    font-size: 1.6rem;
+  }
+  .imagen-texto-texto p {
+    font-size: 1rem;
+  }
+}
+
+
+.google-maps {
+  position: relative;
+  padding-bottom: 20%; /* Mantiene proporción */
+  height: 0;
+  overflow: hidden;
+  box-shadow: 0 8px 30px rgba(255, 182, 193, 0.3);
+  border-radius: 15px;
+  margin: 1rem 0 1rem 2rem; /* Espacio arriba, derecha, abajo, izquierda */
+  width: 320px;  /* Tamaño pequeño fijo */
+  float: right;  /* Lo alinea a la derecha */
+  background: #fff0f3;
+}
+
+.google-maps iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100% !important;
+  height: 100% !important;
+  border: 0;
+  border-radius: 15px;
+}
+
+/* Opcional: para que en móviles se ajuste al 100% */
+@media (max-width: 600px) {
+  .google-maps {
+    float: none;
+    width: 100%;
+    margin: 1rem 0;
+    padding-bottom: 56.25%; /* Proporción 16:9 para móviles (opcional) */
+  }
+}
+
+
+/* Contenedor principal igual que tus otros containers */
+.mapa-info {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Dos columnas iguales */
+  gap: 2.5rem;
+  background-color: #fff0f3;
+  padding: 2.5rem 1rem;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(255, 182, 193, 0.25);
+  margin-bottom: 3rem;
+  align-items: start;
+  text-align: left;
+}
+
+/* Mapa dentro mantiene proporción y tamaño */
+.mapa-info-mapa .google-maps {
+  position: relative;
+  padding-bottom: 75%; /* Proporción 4:3 */
+  height: 0;
+  overflow: hidden;
+  border-radius: 15px;
+  box-shadow: 0 8px 30px rgba(255, 182, 193, 0.3);
+  background: #fff0f3;
+  max-width: 100%;
+}
+
+/* Iframe ocupa todo el contenedor */
+.mapa-info-mapa iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100% !important;
+  height: 100% !important;
+  border: 0;
+  border-radius: 15px;
+}
+
+/* Texto lado derecho */
+.mapa-info-texto h2 {
+  color: #ff8aa0;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.mapa-info-texto p {
+  color: #333;
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+  line-height: 1.5;
+  max-width: 480px;
+}
+
+.mapa-info-texto ul {
+  list-style-type: none;
+  padding-left: 0;
+  margin-bottom: 1.5rem;
+  max-width: 480px;
+}
+
+.mapa-info-texto ul li {
+  margin-bottom: 0.75rem;
+  font-size: 1rem;
+  color: #555;
+}
+
+.mapa-info-texto ul li strong {
+  color: #ff8aa0;
+  font-weight: 700;
+}
+
+/* Botón estilo igual a otros */
+.mapa-info-texto .btn {
+  max-width: 220px;
+  padding: 0.8rem 1.8rem;
+  font-weight: 700;
+}
+
+/* Responsive para pantallas pequeñas */
+@media (max-width: 900px) {
+  .mapa-info {
+    grid-template-columns: 1fr; /* Una columna */
+    text-align: center;
+  }
+  .mapa-info-texto p,
+  .mapa-info-texto ul {
+    max-width: 100%;
+    margin: 0 auto 1.5rem auto;
+  }
+  .mapa-info-texto ul {
+    text-align: left;
+    display: inline-block;
+  }
+}
